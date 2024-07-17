@@ -21,3 +21,7 @@ QUEUE_RMQ="queue"
 
 DATABASE_URL="conect postgres"
 ```
+
+## License
+
+Este projeto está licenciado sob a [MIT licensed](LICENSE).
