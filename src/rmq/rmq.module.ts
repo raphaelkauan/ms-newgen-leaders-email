@@ -2,10 +2,11 @@ import { Module } from '@nestjs/common';
 import { RmqService } from './rmq.service';
 import { RmqController } from './rmq.controller';
 import { MailerModule } from 'src/mailer/mailer.module';
+import { PrismaService } from 'prisma/prisma.service';
 
 @Module({
     imports: [MailerModule],
     controllers: [RmqController],
-    providers: [RmqService],
+    providers: [RmqService, PrismaService],
 })
 export class RmqModule {}
